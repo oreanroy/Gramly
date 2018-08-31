@@ -1,0 +1,79 @@
+.mynavbar {
+    background-color: black !important;
+    font-family: 'Inconsolata', monospace;
+}
+
+.mybrand {
+    color: white !important;
+}
+
+.main-container {
+    background-color:white;
+    height: 600px;
+}
+
+.login-button {
+    background-color: aliceblue !important;
+}
+
+.login-button:hover {
+    color: red !important;
+}
+
+.mynav {
+    color: white !important;
+}
+
+.mynav:hover {
+    color: red !important;
+}
+
+.homecover {
+  margin-top: 40px;
+  background-image: url('slide-02.jpg');
+  height: 500px;
+  background-size: contain;
+}
+
+.coverheading {
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 10px;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.category-box {
+    height: 300px;
+    margin-top: 40px;
+}
+
+.men-box {
+    background-image: url('men2.jpg');
+    background-size: contain;
+    height: 280px;
+    width: 280px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 120px;
+}
+
+.women-box {
+    background-image: url('women.jpg');
+    background-size: contain;
+    height: 280px;
+    width: 280px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 300px;
+    font-family: cursive;
+}
+
+.box-content {
+    margin-left:150px;
+    margin-top:0px;
+    font-family: cursive;
+    font-size: 18px;
+}
+
