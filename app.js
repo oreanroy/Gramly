@@ -24,9 +24,6 @@ app.use(session({
     saveUninitialized: false
 }))
 
-mongoose.Promise = global.Promise;
-mongoose.createConnection('mongodb://localhost/test')
-
 app.use('/home',require('./routes/home'))
 
 app.get('/',(req,res) => {
