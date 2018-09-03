@@ -1,22 +1,36 @@
 const express = require('express');
 const app = express();
-var path = require('path');
+const path = require('path');
+const mongoose = require('mongoose');
+const session = require('express-session');
+const hbs = require('express-hbs')
 
-//view at port 3000
+app.engine('hbs', hbs.express4({
+    defaultLayout: path.join(__dirname, 'views/layouts/default.hbs'),
+    partialsDir: path.join(__dirname, 'views/partials'),
+    layoutsDir: path.join(__dirname, 'views/layouts')
+}))
 
-app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname + '/views/index.html'));
-});
-//custom 404 page
-app.use(function(req, res, next){
-	res.status(404);
-	res.sendFile(path.join(__dirname + '/views/404.html'));
-});
-//custom 500 page
-app.use(function(req, res, next){
-	res.status(500);
-	res.sendFile(path.join(__dirname + '/views/500.html'));
-});
+app.use('/',express.static(path.join(__dirname,'public')))  
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+app.set('view engine', 'hbs')
+app.set('views', path.join(__dirname, 'views/pages'))
+
+app.use(session({
+    secret: 'Shhh',
+    resave: false,
+    saveUninitialized: false
+}))
+
+app.use('/home',require('./routes/home'))
+
+app.get('/',(req,res) => {
+     return res.redirect('/home')
+})
+
+
 
 
 app.listen(3000, function(){
