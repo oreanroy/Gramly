@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramly | Your Favourite Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+    <div class="container">
+                <a class="navbar-brand" href="#">Gramly</a>
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                <div class="collapse navbar-collapse" id="navcol-1">
+                  <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Our Store</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Product</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Offer</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Hot Sale</a></li>
+                    </ul>
+                    <span class="navbar-text actions"> 
+                      <a href="#" class="login">Log In</a><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></span>
+                    <ul class="nav navbar-nav"></ul>
+                    <a href="#" id="shopping-cart-btn" class="btn btn-lg btn-default">
+                        <span class="badge"></span><span class="glyphicon glyphicon-shopping-cart" style="color:black"></span>
+                    </a>
+                  
+                     {{#if isAuthenticated}}
+                          <div class="mr-2" style="color:white">Hello {{username}}</div>
+                           <form class="form-inline my-2 my-lg-0" action="/logout">
+                            <button class="login-button btn btn-outline-success my-2 my-sm-0" type="submit">LOGOUT</button>
+                            </form>
+                        {{else}}
+                      <form class="form-inline my-2 my-lg-0" action="/login">
+                            <button class="login-button btn btn-outline-success my-2 my-sm-0" type="submit">LOGIN</button>
+                      </form>
+                    {{/if}}
+                 
+                  </div>
+    </div>    
+  </nav>
+</div>
+ 
+
+<div class = "container-fluid">
+  {{{body}}}
+</div>
+    <script src="js/popper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
