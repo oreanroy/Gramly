@@ -36,17 +36,6 @@
                         <span class="badge"></span>
                         <span class="glyphicon glyphicon-shopping-cart" style="color:black"></span>
                     </a>
-                  
-                     {{#if isAuthenticated}}
-                          <div class="mr-2" style="color:white">Hello {{username}}</div>
-                           <form class="form-inline my-2 my-lg-0" action="/logout">
-                            <button class="login-button btn btn-outline-success my-2 my-sm-0" type="submit">LOGOUT</button>
-                            </form>
-                        {{else}}
-                      <form class="form-inline my-2 my-lg-0" action="/login">
-                            <button class="login-button btn btn-outline-success my-2 my-sm-0" type="submit">LOGIN</button>
-                      </form>
-                    {{/if}}
                  
                   </div>
     </div>    
