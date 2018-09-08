@@ -11,43 +11,79 @@
 </head>
 <body>
 <div>
-  <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-    <div class="container">
-                <a class="navbar-brand" href="#">Gramly</a>
-                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span>
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-              
-                <div class="collapse navbar-collapse" id="navcol-1">
-                  <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Our Store</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Product</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Features</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Offer</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Hot Sale</a></li>
-                    </ul>
-                    <span class="navbar-text actions"> 
-                        <a href="#" class="login">Log In</a>
-                        <a class="btn btn-light action-button" role="button" href="#">Sign Up</a>
-                    </span>
-                    <ul class="nav navbar-nav"></ul>
-                    <a href="#" id="shopping-cart-btn" class="btn btn-lg btn-default">
-                        <span class="badge"></span>
-                        <span class="glyphicon glyphicon-shopping-cart" style="color:black"></span>
-                    </a>
-                 
-                  </div>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top  navigation-clean-button" style="opacity:0.80;">
+    <div class="container" >
+      <a class="navbar-brand" style="padding-top:1px; padding-bottom:1px;" href="#">Gramly</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="nav navbar-nav mr-auto">
+          <li class="nav-item" role="presentation"><a style="padding-top:1px; padding-bottom:1px;" class="nav-link active" href="#">Our Store</a></li>
+          <li class="nav-item" role="presentation"><a style="padding-top:1px; padding-bottom:1px;" class="nav-link" href="#">Offer</a></li>
+          <li class="nav-item" role="presentation"><a style="padding-top:1px; padding-bottom:1px;" class="nav-link" href="#combos">Menu</a></li>
+          <li class="nav-item" role="presentation"><a style="padding-top:1px; padding-bottom:1px;" class="nav-link" href="#carouselArchitecture">Testimonials</a></li>
+          <li class="nav-item" role="presentation"><a style="padding-top:1px; padding-bottom:1px;" class="nav-link" href="#">Subscriptions</a></li>
+        </ul>
+        <span class="navbar-text actions"> 
+            <a href="#" style="padding-top:1px; padding-bottom:1px;" class="login">Log In</a></span>
+        <span class="navbar-text actions">
+            <a style="padding-top:1px; padding-bottom:1px;" class="btn btn-light action-button" role="button" href="#">Sign Up</a>
+        </span>
+        <ul class="nav navbar-nav" style="padding-top:1px; padding-bottom:1px"></ul>
+        <a href="#" id="shopping-cart-btn" class="btn btn-lg btn-default">
+            <span class="badge"></span>
+            <span class="glyphicon glyphicon-shopping-cart" style="color:black"></span>
+        </a>
+      </div>
     </div>    
   </nav>
 </div>
  
 
-<div class = "container-fluid">
+<div class = "container-fluid" style="padding-left:0; padding-right:0;">
   {{{body}}}
 </div>
+<!-- Footer -->
+  <hr>
+  <div class="text-center" style="background-color:#E0C341;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 p-4">
+          <h2 class="mb-4">Contact</h2>
+          <p class="m-0">
+            <a href="tel:+91 - xxx xxx xxxx" class="text-white">+91 - xxx xxx xxxx</a>
+          </p>
+          <p>
+            <a href="mailto:info@gramly.com" class="text-white">info@gramly.com</a>
+          </p>
+        </div>
+        <div class="col-md-4 p-4">
+          <h2 class="mb-4">Location</h2>
+          <p>
+            <a href="https://www.google.it/maps" target="_blank" class="text-white">No Street
+              <br>New Delhi, IN 110000</a>
+          </p>
+        </div>
+        <div class="col-md-4 p-4">
+          <h2 class="mb-4 ">Openings</h2>
+          <p class="text-white">11:00 - 15:00 &amp; 19:00 - 00:00 Tue/Fri
+            <br>11:00 - 15:00 &amp; 19:00 - 02:00 Sat/Sun</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <p class="text-center text-muted">© Copyright 2018 Gramly - All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
     <script src="js/popper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
 </body>
 </html>
