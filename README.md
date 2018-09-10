@@ -1,5 +1,6 @@
 # Gramly
 Express based food odering app.
+![alt text](https://github.com/SahilQaiser/Gramly/blob/master/Gramly.PNG)
 ## How to Run
 clone the repo<br> 
 run ```npm install```
