@@ -8,6 +8,9 @@ run ```npm install```
 run```node app.js```
 <br>
 got to **localhost:3000**
+<br>
+##Deplyment 
+<a href="https://gramly1.herokuapp.com/home">Visit Gramly</a>
 
 ## Stack
 ### Bootstrap<br>
