@@ -23,45 +23,345 @@
         </div>
     </div>
     <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
-    <ol
-        class="carousel-indicators">
+    <ol class="carousel-indicators">
         <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-1" data-slide-to="1"></li>
         <li data-target="#carousel-1" data-slide-to="2"></li>
     </ol>
 </div>
-<div class="article-list">
+<div class="article-list" id="menu" style="background-color:#DFE2D2;">
     <div class="container">
-            <div class="intro"><hr>
-                <h1 class="text-center">Menu</h1>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-            </div>
-        <div class="row articles" id="combos">
-            <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid mx-auto" src="img/1.jpg"></a>
-                <h3 class="name">Food Item #1</h3>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <hr>
-                <a href="#combos" class="button btn-info" style="padding:10px; border-radius: 12px;">120 ₹ <i class="fa fa-shopping-cart"></i></a>
-            </div>
-            <div
-                class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid mx-auto" src="img/2.jpg"></a>
-                <h3 class="name">Food Item #2</h3>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <hr>
-                <a href="#combos" class="button btn-success" style="padding:10px; border-radius: 12px;">  150 ₹ <i class="fa fa-shopping-cart">  </i></a>
-            </div>
-            <div
-                class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid mx-auto"  src="img/3.jpg"></a>
-                <h3 class="name">Food Item #3</h3>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <hr>
-                <a href="#combos" class="button btn-warning" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+            <div class="intro"><br>
+                <h1 class="text-center text-dark">Whats On Our Menu <i class="fa fa-heart d-inline"></i></h1>
+                <p class="text-center text-dark">We Have Different Variations in HomeStyle, RiceBowls, Protein Packed and Salad Categories...</p>
+            </div><br>
+        <div>
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item" style="background-color:#56c6c6"><a class="nav-link active text-dark" role="tab" data-toggle="tab" href="#homestyle">HomeStyle</a></li>
+                <li class="nav-item" style="background-color:#56c6c6"><a class="nav-link text-dark" role="tab" data-toggle="tab" href="#rice">Rice Bowls</a></li>
+                <li class="nav-item" style="background-color:#56c6c6"><a class="nav-link text-dark" role="tab" data-toggle="tab" href="#protein">Protein Packed</a></li>
+                <li class="nav-item" style="background-color:#56c6c6"><a class="nav-link text-dark" role="tab" data-toggle="tab" href="#salads">Salads</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" role="tabpanel" id="homestyle">
+                <div class="row">
+                    <div class="col-xs-2 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto" src="img/1.jpg"></a>
+                        <h3 class="name">HomeStyle #1</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-info" style="padding:10px; border-radius: 12px;">120 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div
+                        class="col-xs-2 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto" src="img/2.jpg"></a>
+                        <h3 class="name">HomeStyle #2</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-success" style="padding:10px; border-radius: 12px;">  150 ₹ <i class="fa fa-shopping-cart">  </i></a>
+                    </div>
+                    <div
+                        class="col-xs-2 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto"  src="img/3.jpg"></a>
+                        <h3 class="name">HomeStyle #3</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-warning" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div
+                        class="col-xs-2 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto"  src="img/2.jpg"></a>
+                        <h3 class="name">HomeStyle #4</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-primary" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="rice">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto" src="img/1.jpg"></a>
+                        <h3 class="name">Rice Bowls #1</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-info" style="padding:10px; border-radius: 12px;">120 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto" src="img/2.jpg"></a>
+                        <h3 class="name">Rice Bowls #2</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-success" style="padding:10px; border-radius: 12px;">  150 ₹ <i class="fa fa-shopping-cart">  </i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto"  src="img/3.jpg"></a>
+                        <h3 class="name">Rice Bowls #3</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-warning" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto"  src="img/2.jpg"></a>
+                        <h3 class="name">Rice Bowls #4</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-primary" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="protein">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto" src="img/1.jpg"></a>
+                        <h3 class="name">Protein Packed #1</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-info" style="padding:10px; border-radius: 12px;">120 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto" src="img/2.jpg"></a>
+                        <h3 class="name">Protein Packed #2</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-success" style="padding:10px; border-radius: 12px;">  150 ₹ <i class="fa fa-shopping-cart">  </i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto"  src="img/3.jpg"></a>
+                        <h3 class="name">Protein Packed #3</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-warning" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto"  src="img/2.jpg"></a>
+                        <h3 class="name">Protein Packed #4</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-primary" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="salads">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto" src="img/2.jpg"></a>
+                        <h3 class="name">Salads #1</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-info" style="padding:10px; border-radius: 12px;">120 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto" src="img/3.jpg"></a>
+                        <h3 class="name">Salads #2</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-success" style="padding:10px; border-radius: 12px;">  150 ₹ <i class="fa fa-shopping-cart">  </i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto"  src="img/1.jpg"></a>
+                        <h3 class="name">Salads #3</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-warning" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-3 item"><a href="#"><img class="img-fluid rounded-circle mx-auto"  src="img/2.jpg"></a>
+                        <h3 class="name">Salads #4</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <hr>
+                        <a href="#" class="button btn-primary" style="padding:10px; border-radius: 12px;">125 ₹ <i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
 </div>
-<hr><br>
-<div class="container" style="background-color:#A0D468; opacity:0.82;">
+<div class="article-list" id="subscriptions" style="background-color:#a0c1b8">
+    <div class="container">
+            <div class="intro"><br>
+                <h1 class="text-center text-dark">Subscription Options <i class="fa fa-heart d-inline"></i></h1>
+                <p class="text-center text-dark">We Have Different Options for people who want to Subscribe our Means... Longer Subscription means More Offers...</p>
+            </div><hr>
+        <div>
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item"><a class="nav-link active text-dark" style="background-color:#E0C341" role="tab" data-toggle="tab" href="#three">3 Days</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" style="background-color:#E0C341" role="tab" data-toggle="tab" href="#five">5 Days</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" style="background-color:#E0C341" role="tab" data-toggle="tab" href="#seven">7 Days</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" style="background-color:#E0C341" role="tab" data-toggle="tab" href="#twenty">20 Days</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" style="background-color:#E0C341" role="tab" data-toggle="tab" href="#thirty">30 Days</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" style="background-color:#E0C341" role="tab" data-toggle="tab" href="#more">More Options</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" role="tabpanel" id="three">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="text-center">3-Day Subscription</h4>
+                            <h6 class="text-center">These are few of the options for our 3-Day Subscription plans...</h6>
+                            <p class="text-center">Choose any of the following, or choose a mix of them...</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item1 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs3.png">
+                            <p class="text-center"><strong>Item2 : </strong><small>26 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs1.png">
+                            <p class="text-center"><strong>Item3 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item4 : </strong><small>28 ₹</small></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="five">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="text-center">5-Day Subscription</h4>
+                            <h6 class="text-center">These are few of the options for our 5-Day Subscription plans...</h6>
+                            <p class="text-center">Choose any of the following, or choose a mix of them...</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="img/subs2.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/subs3.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/subs1.png">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/subs2.png">
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="seven">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="text-center">7-Day Subscription</h4>
+                            <h6 class="text-center">These are few of the options for our 7-Day Subscription plans...</h6>
+                            <p class="text-center">Choose any of the following, or choose a mix of them...</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item1 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs3.png">
+                            <p class="text-center"><strong>Item2 : </strong><small>26 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs1.png">
+                            <p class="text-center"><strong>Item3 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item4 : </strong><small>28 ₹</small></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="twenty">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="text-center">20-Day Subscription</h4>
+                            <h6 class="text-center">These are few of the options for our 20-Day Subscription plans...</h6>
+                            <p class="text-center">Choose any of the following, or choose a mix of them...</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item1 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs3.png">
+                            <p class="text-center"><strong>Item2 : </strong><small>26 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs1.png">
+                            <p class="text-center"><strong>Item3 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item4 : </strong><small>28 ₹</small></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="thirty">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="text-center">30-Day Subscription</h4>
+                            <h6 class="text-center">These are few of the options for our 30-Day Subscription plans...</h6>
+                            <p class="text-center">Choose any of the following, or choose a mix of them...</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item1 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs3.png">
+                            <p class="text-center"><strong>Item2 : </strong><small>26 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs1.png">
+                            <p class="text-center"><strong>Item3 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item4 : </strong><small>28 ₹</small></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="more">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="text-center">Custom Subscription</h4>
+                            <h6 class="text-center">Please select a Custom Plan for Yourself...</h6>
+                            <p class="text-center">Choose any of the following, or choose a mix of them...</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item1 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs3.png">
+                            <p class="text-center"><strong>Item2 : </strong><small>26 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs1.png">
+                            <p class="text-center"><strong>Item3 : </strong><small>25 ₹</small></p>
+                        </div>
+                        <div class="col-md-3 col-xs-2 col-sm-2">
+                            <img src="img/subs2.png">
+                            <p class="text-center"><strong>Item4 : </strong><small>28 ₹</small></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div><br>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color:#A0D468; opacity:0.82;"><br>
     <h4 class="text-dark" style="text-align:center; opacity:0.82;">Feedbacks <i class="fa fa-heart d-inline"></i></h4>
     <div class="row">
         <div class="col-12"><br><br>
@@ -93,7 +393,7 @@
         </div>
     </div>
 </div><br>
-<div class="container-fluid">
+<div class="container-fluid" id="kitchens">
     <h3 class="title text-center">Our Kitchens <i class="fa fa-heart d-inline"></i></h3><br>
     <div class="kitchen-logos">
         <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
