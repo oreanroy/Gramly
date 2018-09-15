@@ -12,6 +12,7 @@
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
+    .not('a[data-toggle="tab"]') //Not Tabs from Subscription and Menu Section
     .click(function(event) {
       // On-page links
       if (
