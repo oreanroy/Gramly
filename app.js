@@ -29,7 +29,9 @@ app.use('/home',require('./routes/home'))
 app.get('/',(req,res) => {
      return res.redirect('/home')
 })
-
+app.get('/hometest',(req,res) => {
+     res.render('hometest')
+})
 
 
 

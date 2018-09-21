@@ -1,0 +1,99 @@
+#website{
+    background-color: #f8f9fa !important;
+}
+.nav-item{
+    text-align: center;
+}
+.nav-item:hover{
+    border-radius: 15px;
+    background-color: #c7c8c9;
+}
+@media only screen and (max-width: 768px){
+    .navbar-text{
+        float: none !important;
+        text-align: center;
+        display: block;
+        align-content: center;
+    }
+}
+.topcontent{
+    margin-top: 10%; 
+}
+.cardt{
+    margin: 5px;
+    margin-top: 5%; 
+    height: 400px;
+    overflow: none !important;
+    padding: 15px;
+    display: block;
+    align-content: center;
+}
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:10px 10px 10px #888888;
+  }
+.card-deck{
+    padding: 5px;
+}
+.card-body a{
+    font-size: 18px
+}
+.cardimg {
+    width: 100%;
+    height: 200px;
+    align-content: center;
+}
+.card-text{
+    font-size: 13px;
+    color: #6f7172;
+}
+h1, h4, h6, p{
+    color: #6f7172;
+}
+a{
+    color: #6f7172;
+    font-size: bold;
+}
+a:hover{
+    color: #888888;
+}
+.container{
+    background-color:;
+    width: 100%;
+    padding: 2%;
+}
+@media only screen and (max-width: 600px){
+    .cardt{
+        height: 350px;
+    }
+}
+.topnav{
+    margin-top: 4%;
+    margin-bottom: 4%; 
+}
+.topcontent2{
+    margin-top: 6%; 
+    align-content: center;
+}
+.topcontent2 .btn{
+    display: block;
+    background-color:  #c7c8c9; 
+    border: none;
+    color: black;
+    margin-left: 40%;
+    margin-bottom: 4%;
+    font-size: 40px; 
+}
+.lowcontent{
+    margin-top: 8%;
+}
+.cardi{
+    width: 100%;
+}
+.card{
+    margin: 4%;
+    overflow: hidden;
+}
+.footertest{
+    background-color: #c7c8c9 !important;
+}
