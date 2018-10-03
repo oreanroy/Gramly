@@ -4,9 +4,27 @@
 .nav-item{
     text-align: center;
 }
-.nav-item:hover{
-    border-radius: 15px;
-    background-color: #c7c8c9;
+.circles{
+    margin-top:-7%;
+    transform:scale(1.05);
+}
+.circles img:hover{
+    box-shadow:10px 10px 10px whitesmoke;
+    transform:scale(1.25);
+}
+.carouselTop-Text
+{
+    margin-top:-15%;
+    display: inline-block;
+    background-color: black;
+    opacity: 0.40;
+    font-size: 40px;
+    transform:scale(1.45);
+}
+
+.menuChooser {
+    display: flex;
+    justify-content: center;
 }
 @media only screen and (max-width: 800px){
     .card-text{
@@ -20,6 +38,19 @@
         display: block;
         align-content: center;
     }
+}
+@media only screen and (max-width: 576px){
+    .menuChooser ul {
+        display: none;
+    }
+    .mobileMenu{
+        display:block!important;
+        max-height:40px;
+        width:75%;
+    }
+}
+.mobileMenu{
+    display:none;
 }
 .topcontent{
     margin-top: 10%; 
@@ -36,6 +67,10 @@
 .card:hover{
     transform:scale(1.05);
     box-shadow:10px 10px 10px #888888;
+    border-style: double;
+    border-width: medium;
+    border-color: darkgoldenrod;
+    width: auto;
   }
 .card-deck{
     padding: 5px;
@@ -88,6 +123,7 @@ a:hover{
 }
 .cardi{
     width: 100%;
+    margin:5px;
 }
 .card{
     margin: 4%;
