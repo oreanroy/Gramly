@@ -29,4 +29,55 @@ $(document).ready(function(){
         }
     ]
     });
+    $('.slickTabs').slick({
+        infinite:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+        responsive: [
+        {
+            breakpoint: 576, // mobile breakpoint
+            settings: {        
+                dots:false,
+                arrows:true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+    });
+    //fillBreakfast();
 });
+
+function fillBreakfast()
+{
+    clearGrid();
+    for(i=0; i<6; i++)
+    {
+        createProduct(i);
+    }
+}
+function fillLunch()
+{
+    clearGrid();
+    for(i=6; i<11; i++)
+    {
+        createProduct(i);
+    }
+}
+function fillSnacks()
+{
+    clearGrid();
+    for(i=11; i<15; i++)
+    {
+        createProduct(i);
+    }
+}
+function fillDinner()
+{
+    clearGrid();
+    for(i=15; i<19; i++)
+    {
+        createProduct(i);
+    }
+}
