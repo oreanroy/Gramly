@@ -32,6 +32,9 @@ app.get('/',(req,res) => {
 app.get('/hometest',(req,res) => {
      res.render('hometest')
 })
+app.get('/dashboard',(req,res) => {
+     res.render('dashboard', {layout: false})
+})
 
 
 
