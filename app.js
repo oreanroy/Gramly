@@ -27,12 +27,14 @@ app.use(session({
 app.use('/home',require('./routes/home'))
 
 app.get('/',(req,res) => {
-     return res.redirect('/home')
+    return res.redirect('/home')
 })
 app.get('/hometest',(req,res) => {
-     res.render('hometest')
+    res.render('hometest')
 })
-
+app.get('/login',(req,res) => {
+    res.render('login')
+})
 
 
 app.listen(process.env.PORT || 3000, function(){
