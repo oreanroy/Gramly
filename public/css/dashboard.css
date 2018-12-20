@@ -131,17 +131,7 @@ body {
     float: right;
   }
 }
-@media (max-width: 991px) {
-  .navbar-collapse.pull-left {
-    float: none !important;
-  }
-  .navbar-collapse.pull-left + .navbar-custom-menu {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 40px;
-  }
-}
+
 /*
  * Component: Sidebar
  * ------------------
@@ -294,12 +284,13 @@ body {
   background: white;
   padding: 10px 15px;
   border-radius: 50%;
-}
-.neworder h3{
-  font-weight: bold;
+  color: black;
 }
 .content-wrapper h5{
   text-align: center;
+}
+.content > h2{
+  color: #FF3366;
 }
 .mealinfo{
   margin-top: 5px;
@@ -312,17 +303,25 @@ body {
 }
 
 .btn-cart {
-  font-size:1.4rem;
     background: #fcad26;
     color: #fff;
-    padding: 0.4rem 2rem;
-    position: relative;
-    width: -webkit-fill-available;
+   width: 8rem;
 }
-.btn-cart span{
-  position: absolute;
-  left: 5px;
-} 
+
+.btn-buy {
+  
+    background: #FF3366;
+    color: #fff;
+    width: 8rem;
+    margin-top: 2px;     
+}
+.btn-wrapper{
+   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 
 .meal img{
@@ -335,7 +334,25 @@ body {
 .meal-img{
   text-align:center; 
 }
-
+.pastorder{
+  background: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: black;
+}
+.pastordertable{
+  margin-top: 1rem;
+  padding: 1.5rem 2rem;
+  background:white;
+}
+.pastordertable img{
+  height: 48px;
+  width: 48px;
+  transition: all 0.2s;
+}
+.pastordertable img:hover{
+  transform: scale(2.5);
+  } 
 /*Subscribe button*/
 /*.btn-subscribe{
     font-size:1.4rem;

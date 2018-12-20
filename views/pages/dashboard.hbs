@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gramly | Dashboard</title>
+    <title>Gramleys | Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
@@ -13,7 +13,7 @@
 <div class="wrapper">
 <header class="main-header">
         <a href="/" class="logo">
-          Gramly
+          Gramleys
         </a>
         <nav class="navbar navbar-static-top justify-content-end" role="navigation">
           <div class="float-right navbar-custom-menu">
@@ -67,7 +67,7 @@
   <div class="content-wrapper">
     <!-- Main content -->
     <section class="content container-fluid">
-      <h3><span class="neworder"><i class="fas fa-utensils"></span></i> Create a new order</h3>
+      <h2><span class="neworder"><i class="fas fa-utensils"></i></span> Create a new order</h2>
        <div class="meal">
     <h2>Breakfast</h2>
     <ul class="nav nav-tabs" role="tablist">
@@ -84,54 +84,82 @@
     <div id="menu1" class="container-fluid tab-pane active"><br>
      {{!--  <button class="btn btn-subscribe"><span><i class="fas fa-star"></i></span>Subscribe to Menu 1</button> --}}
       <div class="row">
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2">
           <h5>Monday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/3.jpg"></a>
+        <img class=" rounded-circle" src="img/3.jpg">
         </div>
         <div class="mealinfo">
         <h5 class="name">HomeStyle #1</h5>
+        <div class="btn-wrapper"  > 
          <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
         </div>
         </div>
-         <div class="col">
+        </div>
+         <div class="col-sm-6 col-md-4 col-lg-2 ">
           <h5>Tuesday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/1.jpg"></a>
+        <img class=" rounded-circle" src="img/1.jpg">
         </div>
         <div class="mealinfo">
         <h5 class="name">HomeStyle #2</h5>
+        <div class="btn-wrapper"  > 
         <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
         </div>
         </div>
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2">
           <h5>Wednesday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/2.jpg"></a>
+        <img class=" rounded-circle" src="img/2.jpg">
         </div>
         <div class="mealinfo">
         <h5 class="name">HomeStyle #1</h5>
+        <div class="btn-wrapper"  > 
        <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
         </div>
         </div>
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2">
           <h5>Thursday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/3.jpg"></a>
+        <img class=" rounded-circle" src="img/3.jpg">
       </div>
         <div class="mealinfo">
         <h5 class="name">HomeStyle #1</h5>
+        <div class="btn-wrapper"  > 
         <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
         </div>
         </div>
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2">
           <h5>Friday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/1.jpg"></a>
+        <img class=" rounded-circle" src="img/1.jpg">
         </div>
         <div class="mealinfo">
         <h5 class="name">HomeStyle #1</h5>
-        <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <div class="btn-wrapper"  > 
+       <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+          <h5>Saturday</h5>
+          <div class="meal-img">
+        <img class=" rounded-circle" src="img/1.jpg">
+        </div>
+        <div class="mealinfo">
+        <h5 class="name">HomeStyle #1</h5>
+        <div class="btn-wrapper"  > 
+       <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
         </div>
         </div>
       </div>
@@ -158,54 +186,87 @@
     <div id="menu1lunch" class="container-fluid tab-pane active"><br>
      {{!--  <button class="btn btn-subscribe"><span><i class="fas fa-star"></i></span>Subscribe to Menu 1</button> --}}
       <div class="row">
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2"">
           <h5>Monday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/3.jpg"></a>
-        </div>
+        <img class=" rounded-circle" src="img/3.jpg">
+        
         <div class="mealinfo">
         <h5 class="name">HomeStyle #1</h5>
+        <div class="btn-wrapper" > 
          <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
+      </div>
         </div>
         </div>
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2"">
           <h5>Tuesday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/1.jpg"></a>
-        </div>
+        <img class=" rounded-circle" src="img/1.jpg">
+        
         <div class="mealinfo">
         <h5 class="name">HomeStyle #2</h5>
+        <div class="btn-wrapper"  > 
         <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
+      </div>
         </div>
         </div>
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2"">
           <h5>Wednesday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/2.jpg"></a>
-        </div>
+        <img class=" rounded-circle" src="img/2.jpg">
+        
         <div class="mealinfo">
         <h5 class="name">HomeStyle #1</h5>
+        <div class="btn-wrapper"  > 
        <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
+      </div>
         </div>
         </div>
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2"">
           <h5>Thursday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/3.jpg"></a>
-      </div>
+        <img class=" rounded-circle" src="img/3.jpg">
+      
         <div class="mealinfo">
         <h5 class="name">HomeStyle #1</h5>
-        <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <div class="btn-wrapper"  > 
+       <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+        </div>
+      </div>
         </div>
         </div>
-         <div class="col">
+         <div class="col-sm-6 col-md-4 col-lg-2"">
           <h5>Friday</h5>
           <div class="meal-img">
-        <img class=" rounded-circle" src="img/1.jpg"></a>
+        <img class=" rounded-circle" src="img/1.jpg">
+        
+        <div class="mealinfo">
+        <h5 class="name">HomeStyle #1</h5>
+        <div class="btn-wrapper"  > 
+        <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+        </div>
+      </div>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2"">
+          <h5>Saturday</h5>
+          <div class="meal-img">
+        <img class=" rounded-circle" src="img/1.jpg">
         </div>
         <div class="mealinfo">
         <h5 class="name">HomeStyle #1</h5>
-        <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <div class="btn-wrapper"  > 
+       <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </div>
         </div>
         </div>
       </div>
@@ -219,21 +280,68 @@
        <div class="meal">
        <h2>Dinner</h2>
        </div>
-
-      </div>
-
-
     </section>
-    <!-- /.content -->
+    <section class="content container-fluid">
+      <h2><span class="pastorder"><i class="far fa-clock"></i></span> Past orders</h2>
+      <div class="pastordertable">
+      <table class="table table-bordered table-hover table-responsive-sm">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col"">#</th>
+      <th scope="col">Meal Name</th>
+      <th scope="col">Meal type</th>
+      <th scope="col">Order Date</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><div class="meal-img">
+        <img class=" rounded-circle" src="img/3.jpg">
+        </div></th>
+      <td>Salad</td>
+      <td>Breakfast</td>
+      <td>1st Dec 2018</td>
+      <td>
+        <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </td>
+    </tr>
+     <tr>
+      <th scope="row"><div class="meal-img">
+        <img class=" rounded-circle" src="img/2.jpg">
+        </div></th>
+      <td>Lunch</td>
+      <td>Pizza</td>
+      <td>2nd Dec 2018</td>
+      <td>
+        <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+    </tr>
+     <tr>
+      <th scope="row"><div class="meal-img">
+        <img class=" rounded-circle" src="img/1.jpg">
+        </div></th>
+      <td>Oats</td>
+      <td>Breakfast</td>
+      <td>3rd Dec 2018</td>
+      <td>
+         <button class="btn btn-cart"><span><i class="fas fa-shopping-cart"></i></span>Add to cart</button>
+        <button class="btn btn-buy"><span><i class="fas fa-bolt"></i></span>Buy Now</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+    </section>
+   
   </div>
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <!-- To the right -->
-    
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2019 <a href="#">Gramly</a>.</strong> All rights reserved.
+   
+    <strong>Copyright &copy; 2019 <a href="#">Gramleys</a>.</strong> All rights reserved.
   </footer>
  
 </div>
