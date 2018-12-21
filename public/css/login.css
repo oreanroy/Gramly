@@ -4,7 +4,8 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+	background-size: cover;
+	padding: 1%;
 }
 
 	
@@ -36,4 +37,24 @@ div.login{
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
+}
+.float-right a{
+	color: #5d5d5d;
+}
+.float-right a:hover {
+	color: white;
+}
+
+/* The signup modal code */
+.signup{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.modalcolor{
+	color: #5d5d5d;
+	background-color: #d6d6c2;
+	border: 1px solid #333;
+	padding: 2%;
+	border-radius: 10px;
 }
