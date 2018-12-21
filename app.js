@@ -35,7 +35,10 @@ app.get('/hometest',(req,res) => {
 app.get('/login',(req,res) => {
     res.render('login')
 })
-
+app.post('/login',(req, res) => {
+    console.log("You have successfully entered")
+    res.render('success')
+})
 
 app.listen(process.env.PORT || 3000, function(){
 	console.log("express running on localhost 3000");
