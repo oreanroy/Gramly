@@ -35,13 +35,10 @@ app.get('/hometest',(req,res) => {
 app.get('/login',(req,res) => {
     res.render('login')
 })
-<<<<<<< HEAD
 app.get('/dashboard',(req,res) => {
      res.render('dashboard', {layout: false})
 })
 
-=======
->>>>>>> 1651da17c5c708ace2bd032b979e045aff7ed73f
 
 
 app.listen(process.env.PORT || 3000, function(){
