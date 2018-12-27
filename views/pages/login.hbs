@@ -1,6 +1,10 @@
 <head>
     <link rel="stylesheet" href="css/login.css">
-    <link  href="js/login.js">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+    <script src="js/myJs/login.js"></script>
 </head>
 <div class="container">
     <div class="row">
@@ -9,11 +13,11 @@
                 <h3>Gramleys</h3>
                 <div class="form-group">
                     <label for="InputEmail">Email address</label>
-                    <input type="email" class="form-control" name="email" placeholder="Email" required id="email" value="test@gramley.com" />
+                    <input type="email" class="form-control" name="email" placeholder="Email" required id="emailLogin" />
                 </div>
                 <div class="form-group">
                     <label for="InputPassword">Password</label>
-                    <input type="password" class="form-control" name="password" placeholder="Password" id="pass" />
+                    <input type="password" class="form-control" name="password" placeholder="Password" id="loginPass" />
                 </div>
                 <br>
                 <button type="submit" name="login" class="btn btn-lg btn-primary formbtn">Login</button>
@@ -41,40 +45,50 @@
             </div>
             <div class="modal-body">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <form method="POST">
+                    <form method="POST" role="form" id="modalForm">
                         <div class="form-group">
                             <label for="InputEmail">Email address</label>
-                            <input type="email" class="form-control" name="email" placeholder="Email" required id="email" value="test@gramley.com" />
+                            <input type="email" class="form-control" name="emailModal" placeholder="Email" id="emailModal" required/>
                         </div>
                         <div class="form-group">
                             <label for="InputName">Full Name</label>
-                            <input type="text" class="form-control" name="name" placeholder="Name" required id="name" value="NameTest" />
+                            <input type="text" class="form-control" name="nameModal"  placeholder="Name" required id="nameModal" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword">Select Password</label>
+                            <input type="password" class="form-control" name="passModal" placeholder="Password" id="passModal" />
                         </div>
                         <div class="form-group">
                             <label for="InputNumber">Mobile Number</label>
-                            <input type="text" class="form-control" name="number" min="1" max="10" placeholder="Mobile Number" required id="number">
+                            <input type="text" class="form-control" name="numberModal" min="1" max="10" placeholder="Mobile Number" required id="numberModal">
                         </div>
                         <div class="row">
                             <div class="form-group d-inline col-md-4 col-lg-4">
                                 <label for="InputAge">Age</label>
-                                <input style="display: block;"type="number" class="form-control " name="quantity" min="10" max="100" placeholder="Age" required id="age">
+                                <input style="display: block;"type="number" class="form-control " name="ageModal" min="10" max="100" placeholder="Age" required id="ageModal">
                             </div>
                             <div class="form-group d-inline  col-md-4 col-lg-4">
                                 <label for="InputAge">Weight(kg)</label>
-                                <input style="display: block;" type="number" class="form-control " name="quantity" min="30" max="150" placeholder="Weight" required id="weight">
+                                <input style="display: block;" type="number" class="form-control " name="weightModal" min="30" max="150" placeholder="Weight" required id="weightModal">
+                                
                             </div>
                             <div class="form-group d-inline col-md-4 col-lg-4">
                                 <label for="InputAge">Height(cms)</label>
-                                <input style="display: block;" type="number" class="form-control " name="quantity" min="100" max="200" placeholder="Height" required id="height">
+                                <input style="display: block;" type="number" class="form-control " name="heightModal" min="100" max="200" placeholder="Height" required id="heightModal">
+                        
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-secondary" data-dismiss="modal">Create</button>
+                <button type="submit" class="btn btn-secondary">Create</button>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
 
