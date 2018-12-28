@@ -3,7 +3,10 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const session = require('express-session');
-const hbs = require('express-hbs')
+const hbs = require('express-hbs');
+const { check,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+
 
 app.engine('hbs', hbs.express4({
     defaultLayout: path.join(__dirname, 'views/layouts/default.hbs'),
@@ -36,15 +39,57 @@ app.get('/login',(req,res) => {
     res.render('login')
 })
 
+//the get request handler will be subsequently removed only for devlopment
 app.get('/dashboard',(req,res) => {
      res.render('dashboard', {layout: false})
 })
+app.post('/dashboard', [
+    check('emailLogin', "invalid email").isEmail(), 
+    check('passwordLogin', "password less than 8 character").isLength({ min: 8 })
+], (req, res) => {
+    //alert("You have suceesfully entered")
+    var errors = validationResult(req);
+    console.log(errors)
+    if(errors.isEmpty()){
+        console.log("congrats you made in");
+        //these are picked by the name tag.
+        var email = req.body.emailLogin;
+        var pass = req.body.passwordLogin.trim();
+        email = sanitizeBody(email).trim().escape();
 
+        console.log(email);
+        console.log(pass);
+        //create and user and then render the dashboard
+        return res.render('dashboard', {layout: false})
+    }else{
+        console.log(errors.array()[0]);
+        console.log(errors.array()[0].msg);
+        errormsg = errors.array()[0].msg;
+        return res.render('login', { error: errormsg})
+    }
+})
 
-
-app.post('/login',(req, res) => {
-    console.log("You have successfully entered")
-    res.render('success')
+// this is modal submit handler 
+app.post('/login', [
+    check('emailModal', "invalid mail").isEmail(), 
+    check('passModal', "password less than 8").isLength({ min: 8 }),
+    check('nameModal', "name must be more than 4 character and text").isString().isLength({ min: 4 }),
+    check('numberModal', "enter number atleast 9 character and numeric").isNumeric().isLength({ min: 9 }),
+    check('ageModal', "enter correct age").isNumeric(),
+    check('weightModal', "enter correct weight").isNumeric(),
+    check('heightModal', "enter correct height").isNumeric()
+], (req, res) => {
+    var errors = validationResult(req);
+    if(errors.isEmpty()){
+        //sanatize and then make a entry to database display succ
+        console.log("you have sucessfully created an account now login")
+        res.render('success');
+    }else{
+        //return to login page and show error
+        console.log(errors.array());
+        var errormsg = errors.array()[0].msg;
+        res.render('login', {modalerror: errormsg});
+    }
 })
 
 

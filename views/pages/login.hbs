@@ -4,24 +4,27 @@
     integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="js/myJs/login.js"></script>
 </head>
 <div class="container">
+    <h3 style="color: red;">{{modalerror}}</h3>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 login">
-            <form  method="POST">
+            <form  method="POST" action="/dashboard">
                 <h3>Gramleys</h3>
+                <p style="color: red;">{{error}}</p>
                 <div class="form-group">
                     <label for="InputEmail">Email address</label>
-                    <input type="email" class="form-control" name="email" placeholder="Email" required id="emailLogin" />
+                    <input type="email" class="form-control" name="emailLogin" placeholder="Email" required id="emailLogin" />
                 </div>
                 <div class="form-group">
                     <label for="InputPassword">Password</label>
-                    <input type="password" class="form-control" name="password" placeholder="Password" id="loginPass" />
+                    <input type="password" class="form-control" name="passwordLogin" placeholder="Password" id="loginPass" />
                 </div>
                 <br>
                 <button type="submit" name="login" class="btn btn-lg btn-primary formbtn">Login</button>
-                <button type="button" name="create" class="btn btn-lg btn-primary formbtn" data-toggle="modal" data-target="#exampleModal">Create</button>
+                <button type="button" name="create" class="btn btn-lg btn-primary formbtn" data-toggle="modal" data-target="#signupModal">Create</button>
                 <br>
                 <div class="float-right">
                     <a href="#" class="float-right">Forgot password</a>
@@ -34,11 +37,11 @@
 <!-- Button trigger modal -->
 
 <!-- Modal -->
-<div class="modal fade signup" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade signup" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content modalcolor">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
+                <h5 class="modal-title" id="ModalLabel">Signup</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -69,20 +72,16 @@
                             </div>
                             <div class="form-group d-inline  col-md-4 col-lg-4">
                                 <label for="InputAge">Weight(kg)</label>
-                                <input style="display: block;" type="number" class="form-control " name="weightModal" min="30" max="150" placeholder="Weight" required id="weightModal">
-                                
+                                <input style="display: block;" type="number" class="form-control " name="weightModal" min="30" max="150" placeholder="Weight" required id="weightModal">                
                             </div>
                             <div class="form-group d-inline col-md-4 col-lg-4">
                                 <label for="InputAge">Height(cms)</label>
-                                <input style="display: block;" type="number" class="form-control " name="heightModal" min="100" max="200" placeholder="Height" required id="heightModal">
-                        
+                                <input style="display: block;" type="number" class="form-control " name="heightModal" min="100" max="200" placeholder="Height" required id="heightModal">  
                             </div>
                         </div>
+                        <button type="submit" class="btn btn-secondary float-right" id="createButton">Create</button>
                     </form>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-secondary">Create</button>
             </div>
         </div>
     </div>

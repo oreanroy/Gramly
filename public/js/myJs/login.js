@@ -28,6 +28,11 @@ $("#modalForm").validate({
         },
     }
 });
+$("#createButton").click(function(e){
+    if(!$('#modalForm').valid()){
+        e.preventDefault()
+    }
+})
 
 
 
